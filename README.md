@@ -1,3 +1,6 @@
+Learning react on youtube from Caleb Curry
+Here is a link of his React JS Course: https://www.youtube.com/watch?v=x_x5LkW6IXs&t=2306s
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
