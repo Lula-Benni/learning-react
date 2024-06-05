@@ -14,3 +14,8 @@
     font-size: large;
     padding: 15px 0;
 }
+.add-new-employee:hover{
+    border-color: blue;
+    padding:17px 0;
+    width: 202px;
+}

@@ -30,6 +30,10 @@ button{
     border-style: solid;
     font-weight: bolder;
 }
+button:hover{
+    border-color: purple;
+    padding: 6px 16px;
+}
 p{
     color: #636363;
     font-weight: bolder;
