@@ -3,14 +3,9 @@ const name = "Lulamile"
 function App() {
   return (
     <div className='App'>
-      {name==="Lulamile"?
-      <>
-        <Person/>
-        <h1>Hello {name}</h1>
-      </>
-      :
-        <h1>No person</h1>
-    }
+      <Person name={name}/>
+      <Person name="Benni"/>
+      <Person/>
     </div>
   )
 }

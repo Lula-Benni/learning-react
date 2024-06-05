@@ -1,6 +1,6 @@
-function Person(){
+function Person(props){
     return(
-        <h1>This is a Person</h1>
+        <h1>This is {props.name}</h1>
     )
 }
 
