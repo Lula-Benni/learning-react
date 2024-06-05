@@ -1,10 +1,16 @@
 import Person from './components/Person'
-
+const name = "Lulamile"
 function App() {
   return (
-    <div>
-      <Person/>
-      <h1>Hello World</h1>
+    <div className='App'>
+      {name==="Lulamile"?
+      <>
+        <Person/>
+        <h1>Hello {name}</h1>
+      </>
+      :
+        <h1>No person</h1>
+    }
     </div>
   )
 }
