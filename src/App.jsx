@@ -3,7 +3,7 @@ const name = "Lulamile"
 function App() {
   return (
     <div className='App'>
-      <Person name={name}/>
+      <Person name={name} role="Student"/>
       <Person name="Benni"/>
       <Person/>
     </div>
