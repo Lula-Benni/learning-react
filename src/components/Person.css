@@ -3,8 +3,9 @@
     display: flex;
     border-radius: 8px;
     margin: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 350px;
+    background-color: white;
 }
 .card-text{
     text-align: center;
