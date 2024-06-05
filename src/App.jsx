@@ -1,16 +1,15 @@
 import Person from './components/Person'
-const name = "Lulamile"
+import { useState } from 'react'
+
 function App() {
+  //let name = "Lulamile"
+  const [name, setName] = useState('Lulamile');
   return (
     <div className='App'>
-      {name==="Lulamile"?
-      <>
-        <Person/>
-        <h1>Hello {name}</h1>
-      </>
-      :
-        <h1>No person</h1>
-    }
+      <input type="text" onChange={(e) => {setName(e.target.value)}}/>
+      <Person name={name} role="Student"/>
+      <Person name="Benni"/>
+      <Person/>
     </div>
   )
 }
