@@ -30,6 +30,16 @@ button{
     border-style: solid;
     font-weight: bolder;
 }
+.editBtn{
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    border-color: #E5E4E2;
+    background-color: white;
+    color: purple;
+    border-style: solid;
+    font-weight: bolder;
+}
 button:hover{
     border-color: purple;
     padding: 6px 16px;

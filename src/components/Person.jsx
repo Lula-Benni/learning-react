@@ -1,14 +1,15 @@
 import './Person.css'
 import image from '../essentials/Vini.jpg';
+import EditPerson from './EditPerson';
 
 function Person(props){
     return(
         <div className='card'>
-            <img src={image} alt='user image'/>
+            <img className="profile-image" src={props.img} alt='user image'/>
             <div className='card-text'>
-                <h3>{props.name?props.name:"Unkown"}</h3>
-                <p>{props.role?props.role:"No role"}</p>
-                <button className='editBtn'>Edit</button>
+                <h3 className='profile-name'>{props.name}</h3>
+                <p className='profile-role'>{props.role}</p>
+                <EditPerson/>
             </div>
         </div>
     )
