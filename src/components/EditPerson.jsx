@@ -2,7 +2,10 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function EditPerson() {
+function EditPerson(props) {
+  const [name, setName] = useState(props.name);
+  const [role, setRole] = useState(props.role);
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -28,7 +31,13 @@ function EditPerson() {
                         <label className="name-label" for="name">Full Name</label>
                     </div>
                     <div className='person-name-edit'>
-                        <input className="name-update" id="name" type='text' placeholder='Enter your FullName'></input>
+                        <input 
+                            className="name-update" 
+                            id="name" 
+                            type='text' 
+                            value={name} 
+                            onChange={(nameValue) => {setName(nameValue.target.value)}}
+                            placeholder='Enter your FullName'></input>
                     </div>
                 </div>
                 <div className='person-role'>
@@ -36,7 +45,13 @@ function EditPerson() {
                         <label className="role-label" for="role">Role</label>
                     </div>
                     <div className='person-role-edit'>
-                        <input className="role-update" id="role" type='text' placeholder='Enter your Role'></input>
+                        <input 
+                            className="role-update" 
+                            id="role" 
+                            type='text' 
+                            value={role} 
+                            onChange={(roleValue) => {setRole(roleValue.target.value)}}
+                            placeholder='Enter your Role'></input>
                     </div>
                 </div>
             </form>

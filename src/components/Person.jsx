@@ -9,7 +9,7 @@ function Person(props){
             <div className='card-text'>
                 <h3 className='profile-name'>{props.name}</h3>
                 <p className='profile-role'>{props.role}</p>
-                <EditPerson/>
+                <EditPerson name={props.name} role={props.role} />
             </div>
         </div>
     )
