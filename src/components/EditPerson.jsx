@@ -25,7 +25,11 @@ function EditPerson(props) {
           <Modal.Title>Update Person</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <form id='edit-modal' className='edit-person-form'>
+            <form onSubmit={(e) => {
+                e.preventDefault()
+                props.updatePerson(props.id, name, role)
+            }} 
+            id='edit-modal' className='edit-person-form'>
                 <div className='person-name'>
                     <div className='person-name-label'>
                         <label className="name-label" for="name">Full Name</label>
