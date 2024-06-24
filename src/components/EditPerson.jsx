@@ -13,7 +13,7 @@ function EditPerson(props) {
 
   return (
     <>
-      <button onClick={handleShow} className='editBtn'>Update</button>
+      <button onClick={handleShow} className="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Update</button>
 
       <Modal
         show={show}
@@ -30,13 +30,13 @@ function EditPerson(props) {
                 props.updatePerson(props.id, name, role)
             }} 
             id='edit-modal' className='edit-person-form'>
-                <div className='person-name'>
-                    <div className='person-name-label'>
+                <div className='m-3 flex flex-wrap'>
+                    <div className='m-2'>
                         <label className="name-label" for="name">Full Name</label>
                     </div>
-                    <div className='person-name-edit'>
+                    <div className='m-2'>
                         <input 
-                            className="name-update" 
+                            className="rounded-sm bg-zinc-200 text-center"
                             id="name" 
                             type='text' 
                             value={name} 
@@ -44,13 +44,13 @@ function EditPerson(props) {
                             placeholder='Enter your FullName'></input>
                     </div>
                 </div>
-                <div className='person-role'>
-                    <div className='person-role-label'>
+                <div className='m-3 flex flex-wrap'>
+                    <div className='px-4 m-1'>
                         <label className="role-label" for="role">Role</label>
                     </div>
-                    <div className='person-role-edit'>
+                    <div className='m-2'>
                         <input 
-                            className="role-update" 
+                            className="rounded-sm bg-zinc-200 text-center"
                             id="role" 
                             type='text' 
                             value={role} 
@@ -64,7 +64,7 @@ function EditPerson(props) {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <button className='update-btn' form='edit-modal'>Update</button>
+          <button className='bg-violet-600 rounded py-2 px-2' form='edit-modal'>Update</button>
         </Modal.Footer>
       </Modal>
     </>
