@@ -81,7 +81,7 @@ function App() {
         })}
       </div>
         <div className="my-3 flex justify-center">
-          <button className='py-2 px-4 text-blue-700 text-lg border-1 border-gray-400'>+ New Person</button>
+          <button className='py-2 px-4 text-blue-700 font-bold border-1 border-gray-400 hover:border-blue-700'>+ New Person</button>
         </div>
     </div>
   )
