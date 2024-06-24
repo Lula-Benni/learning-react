@@ -1,4 +1,7 @@
-.container{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/**.container{
     display: inline;
 }
 .App{
@@ -19,4 +22,4 @@
     border-color: blue;
     padding:17px 0;
     width: 202px;
-}
+}*/
