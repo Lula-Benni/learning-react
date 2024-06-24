@@ -1,6 +1,6 @@
 import Person from './components/Person'
 import { useState } from 'react'
-import './App.css'
+import './index.css'
 import {v4 as uuidv4} from 'uuid'
 
 function App() {
@@ -57,8 +57,8 @@ function App() {
   }
 
   return (
-    <div className='container'>
-      <div className='App'>
+    <div className='App'>
+      <div className='flex flex-wrap'>
         {/*<input type="text" onChange={(e) => {setName(e.target.value)}}/>*/}
         {/*<Person name={name} role="Student"/>
         <Person name="Benni"/>
@@ -81,7 +81,7 @@ function App() {
         })}
       </div>
         <>
-          <button className='add-new-employee'>+ New Person</button>
+          <button className='object-center border-1 border-gray-400'>+ New Person</button>
         </>
     </div>
   )
