@@ -58,7 +58,7 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='flex flex-wrap'>
+      <div className='pt-2 flex flex-wrap'>
         {/*<input type="text" onChange={(e) => {setName(e.target.value)}}/>*/}
         {/*<Person name={name} role="Student"/>
         <Person name="Benni"/>
@@ -80,9 +80,9 @@ function App() {
           );
         })}
       </div>
-        <>
-          <button className='object-center border-1 border-gray-400'>+ New Person</button>
-        </>
+        <div className="my-3 flex justify-center">
+          <button className='py-2 px-4 text-blue-700 text-lg border-1 border-gray-400'>+ New Person</button>
+        </div>
     </div>
   )
 }
