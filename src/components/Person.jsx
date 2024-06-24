@@ -10,8 +10,8 @@ function Person(props){
                 <h3 className='profile-name'>{props.name}</h3>
                 <p className='profile-role'>{props.role}</p>
                 <EditPerson id={props.id} name={props.name} role={props.role} 
-                updatePerson={props.updatePerson} 
-            />
+                updatePerson={props.updatePerson}/>
+            
             </div>
         </div>
     )
